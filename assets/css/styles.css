@@ -672,12 +672,12 @@ body {
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / 46%);
   transition: all 0.3s ease;
 }
 
 .client-logo:hover {
-  background: rgba(0, 255, 136, 0.1);
+  background: rgb(255, 255, 255);
   transform: translateY(-5px);
 }
 
@@ -685,7 +685,20 @@ body {
   width: 100%;
   height: 60px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.7);
+  filter: grayscale(100%) brightness(0);
+  transition: all 0.3s ease;
+}
+
+
+#grych{
+    filter: grayscale(100%) brightness(0.8);
+}
+
+#grych:hover{
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(0%) brightness(1);
   transition: all 0.3s ease;
 }
 
@@ -877,6 +890,7 @@ body {
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 100px auto;
   }
 
   .hero-title {
